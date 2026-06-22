@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "nikoo";
+    src: url(/public/fonts/Inter-Medium.woff2);
+    font-weight: 300;
+}
+body {
+    font-family: "nikoo";
+}

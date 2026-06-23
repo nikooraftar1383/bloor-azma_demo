@@ -53,18 +53,19 @@
   border-radius: 50%;
   z-index: 999;
   background: linear-gradient(
-    45deg,
-    #003282,
+    48deg,
+    #1456c0,
     #450156,
     #a80872,
-    #eb3434,
     #0fd8db,
+    #eb3434,
     #00520a
   );
   background-size: 300% 300%;
   animation: rotate 4s linear infinite;
 
 }
+
 @keyframes rotate {
   0% {
     background-position: 0% 50%;
@@ -111,3 +112,20 @@
     background-position: -200% center;
   }
 }
+
+/*استایل متن پااین هیروسکشن*/
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+

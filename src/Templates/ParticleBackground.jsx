@@ -29,7 +29,7 @@ export default function ParticleBackground() {
         this.x = x;
         this.y = y;
 
-        this.baseSize = Math.random() * 0.5 + 1.5;
+        this.baseSize = Math.random() * 0.5 + 1;
         this.size = this.baseSize;
 
         this.distance = Infinity;
@@ -99,7 +99,14 @@ export default function ParticleBackground() {
         ctx.shadowBlur = intensity * 20;
 
         ctx.shadowColor =
-          "rgba(168,85,247,0.9)";
+          "rgba(168,85,247,0.9)",
+           "rgb(0, 50, 130)",
+    "#450156",
+    "#a80872",
+    "#eb3434",
+    "#0fd8db",
+    "#00520a"
+          ;
 
         ctx.fillStyle = `rgb(${r},${g},${b})`;
 
@@ -107,7 +114,7 @@ export default function ParticleBackground() {
       }
     }
 
-    const PARTICLE_COUNT = 70;
+    const PARTICLE_COUNT = 150;
 
     for (let i = 0; i < PARTICLE_COUNT; i++) {
       particles.push(
@@ -171,13 +178,15 @@ export default function ParticleBackground() {
     <canvas
       ref={canvasRef}
       style={{
-        position: "fixed",
+        position: "absolute",
         inset: 0,
-        width: "100vw",
-        height: "1000px",
+        width: "100%",
+        height: "642px",
         zIndex: -1,
         pointerEvents: "none",
+        backgroundColor:"#fafafa"
       }}
     />
+   
   );
 }

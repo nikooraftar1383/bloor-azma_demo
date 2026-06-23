@@ -1,10 +1,16 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: "nikoo";
-    src: url(/public/fonts/Inter-Medium.woff2);
-    font-weight: 300;
+  font-family: "nikoo";
+  src: url(/public/fonts/Inter-Medium.woff2);
+  font-weight: 300;
 }
 body {
-    font-family: "nikoo";
+  font-family: "nikoo";
+  background: white;
+  color: black;
+}
+
+body.dark {
+  color: #966e30;
 }

@@ -1,13 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../css/BorderStyle.css";
 import { motion, AnimatePresence } from "framer-motion";
 import { image } from "framer-motion/client";
+
 
 let EventSection = () => {
   let eventtext = [
     {
       title: "Meetups",
-      image: "/public/images/eventsection/1724134657631B-SulfideAE201.webp",
+      image: "/images/eventsection/1728813523277specteroil (1).webp",
     },
     {
       title: "Workshops",
@@ -45,10 +46,13 @@ let EventSection = () => {
     x: 0,
     y: 0,
   });
+  useEffect(() => {
+  
+}, [activeImage]);
   return (
     <>
       <div className="w-[61%] mx-auto mt-31.75  border-t border-[0.25px]  border-slate-200/50 "></div>
-      <div className="w-[61%] mx-auto mt-2">
+      <div className="w-[61%] mx-auto mt-1">
         <span className="text-[12px] text-[#9ca3af] scale-[0.999] ">
           EVENTS WE'VE HOSTED
         </span>
@@ -63,11 +67,6 @@ let EventSection = () => {
               <p
                 className="cursor-pointer transition-colors text-[92.16px] duration-200 hover:text-black text-[#9ca3af] font-bold "
                 onMouseEnter={() => {
-                  console.log(
-                    activeImage,
-                   elem.image,
-                    index,
-                  );
                   setActiveImage(elem.image);
                 }}
                 onMouseLeave={() => setActiveImage(null)}
@@ -86,44 +85,39 @@ let EventSection = () => {
             </div>
           ))}
         </div>
+     <AnimatePresence>
+  {activeImage && (
+    <motion.img
+      src={activeImage}
+      alt=""
+      className="fixed pointer-events-none z-10 w-75 h-50 object-cover rounded-2xl"
+      style={{
+        left: mousePosition.x + 30,
+        top: mousePosition.y - 220,
+      }}
+      initial={{
+        opacity: 0,
+        scale: 0.8,
+        rotate: -8,
+      }}
+      animate={{
+        opacity: 1,
+        scale: 1,
+        rotate: 0,
+      }}
+      exit={{
+        opacity: 0,
+        scale: 0.8,
+        rotate: 8,
+      }}
+      transition={{
+        duration: 0.25,
+      }}
+    />
+  )}
+</AnimatePresence>
       </div>
-      <AnimatePresence>
-        {activeImage && (
-          <motion.div
-            className="fixed pointer-events-none z-50"
-            animate={{
-              x: mousePosition.x + 30,
-              y: mousePosition.y - 200,
-            }}
-            transition={{
-              type: "spring",
-              stiffness: 120,
-              damping: 15,
-            }}
-          >
-            <motion.img
-              src={activeImage}
-              alt=""
-              className="w-80 h-120 object-cover rounded-2xl shadow-2xl"
-              initial={{
-                opacity: 0,
-                scale: 0.8,
-                rotate: -5,
-              }}
-              animate={{
-                opacity: 1,
-                scale: 1,
-                rotate: 0,
-              }}
-              exit={{
-                opacity: 0,
-                scale: 0.8,
-                rotate: 5,
-              }}
-            />
-          </motion.div>
-        )}
-      </AnimatePresence>
+    
       <div className="w-[61%] mx-auto mt-0  border-t border-[0.25px]  border-slate-200/50 "></div>
     </>
   );

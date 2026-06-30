@@ -128,4 +128,27 @@
   width: max-content;
   animation: marquee 30s linear infinite;
 }
+/*استایل بک گراند بیلد*/
+@keyframes scrollUp {
 
+  from{
+    transform:translateY(0);
+  }
+
+  to{
+    transform:translateY(-50%);
+  }
+
+}
+
+.scroll-slow{
+    animation:scrollUp 40s linear infinite;
+}
+
+.scroll-medium{
+    animation:scrollUp 30s linear infinite;
+}
+
+.scroll-fast{
+    animation:scrollUp 22s linear infinite;
+}

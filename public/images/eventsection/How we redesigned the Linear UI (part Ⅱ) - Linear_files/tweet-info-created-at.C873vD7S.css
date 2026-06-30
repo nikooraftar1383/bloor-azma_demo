@@ -1,0 +1,3 @@
+@charset "UTF-8";
+@layer reset, base, app.base;
+.JxizdW_root{color:inherit;font-size:var(--tweet-info-font-size);line-height:var(--tweet-info-line-height);text-decoration:none}.JxizdW_root:hover{text-decoration-line:underline;text-decoration-thickness:1px}

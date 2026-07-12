@@ -11,7 +11,7 @@ export default function BackgroundCards() {
       {cards.map((card, index) => (
         <div
           key={index}
-          className="absolute w-90 h-45 rounded-[30px] border border-gray-200 bg-blue-500 shadow-xl animate-float p-6"
+          className="absolute w-90 h-45 rounded-[30px] border border-gray-200  shadow-xl animate-float p-6 "
           style={{
             top: card.top,
             left: card.left,

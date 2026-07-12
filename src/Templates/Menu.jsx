@@ -28,7 +28,7 @@ let Menu = () => {
     z-100
     transition-all
     duration-500
-    ${isScrolled ? "bg-white/60 backdrop-blur-xl shadow-md py-3" : "bg-transparent py-6"}
+    ${isScrolled ? "bg-white/20 backdrop-blur-md shadow-md py-3" : "bg-transparent py-6"}
   `}
         >
           <div className="w-[61%] mx-auto flex justify-between items-center">

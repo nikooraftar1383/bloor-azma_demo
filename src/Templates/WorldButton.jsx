@@ -74,7 +74,7 @@ let WorldButton = () => {
         <h3 className="font-bold text-[20px] transition-opacity duration-300 ">
           {data[activeIndex].title}
         </h3>
-        <p className="text-[14px] text-[#9f9f9f] transition-opacity duration-300 ">
+        <p className="text-[14px] text-[#9f9f9f] transition-opacity duration-300 h-[30px] ">
           {display}
         </p>
       </div>

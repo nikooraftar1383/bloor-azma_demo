@@ -27,7 +27,7 @@ let Titr = () => {
         }
        
         
-   },delet?300:400);
+   },delet?300:350);
    return ()=> clearTimeout(timeout)
   }, [index,display,delet]);
   return (

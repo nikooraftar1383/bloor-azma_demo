@@ -152,3 +152,188 @@
 .scroll-fast{
     animation:scrollUp 22s linear infinite;
 }
+
+/* انیمیشن مشترک */
+@keyframes moveLine {
+  from {
+    offset-distance: 0%;
+  }
+
+  to {
+    offset-distance: 100%;
+  }
+}
+
+/* تنظیمات مشترک */
+.cpu-line-1,
+.cpu-line-2,
+.cpu-line-3,
+.cpu-line-4,
+.cpu-line-5,
+.cpu-line-6 {
+  offset-distance: 0%;
+  animation-name: moveLine;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  filter: blur(2px);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* خط اول */
+.cpu-line-1 {
+  offset-path: path("M 85 49 h 35");
+  animation-duration: 2s;
+}
+
+/* خط دوم */
+.cpu-line-2 {
+  offset-path: path("M 145 19 h -22 q -5 0 -5 5 v 18");
+  animation-duration: 2.5s;
+}
+
+/* خط سوم */
+.cpu-line-3 {
+  offset-path: path("M 130 73 h -12 q -5 0 -5 -5 v -15");
+  animation-duration: 2.8s;
+}
+
+/* خط چهارم */
+.cpu-line-4 {
+  offset-path: path("M 70 35 v -18 q 0 -5 5 -5 h 65 q 5 0 5 5 v 12");
+  animation-duration: 3s;
+}
+
+/* خط پنجم */
+.cpu-line-5 {
+  offset-path: path("M 172 33 v 27 q 0 5 -5 5 h -32");
+  animation-duration: 2.7s;
+}
+
+/* خط ششم */
+.cpu-line-6 {
+  offset-path: path("M 130 79 h -48 q -5 0 -5 -5 v -11");
+  animation-duration: 3.2s;
+}
+
+/*کارت مشکی آخر صفحه*/
+.hero-card{
+
+width:61%;
+
+
+background:#111827;
+
+border-radius:34px;
+
+display:grid;
+height: 375px;
+
+grid-template-columns: 60% 40%;
+overflow:hidden;
+
+position:relative;
+
+}
+
+/*سمت چپ قسمت انتهایی*/
+.hero-left{
+
+padding:48px;
+margin-bottom: 12px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+}
+
+.hero-left h2{
+
+font-size:36px;
+line-height: 40px;
+font-weight:800;
+margin-bottom: 12px;
+margin-top: 16px;
+color:white;
+
+
+
+
+}
+
+.hero-small{
+font-weight: 600;
+font-size:11px;
+color:#6b7280;
+
+}
+
+.hero-left p{
+color: white;
+font-size: 18px;
+
+}
+
+.buttons{
+
+display:flex;
+
+gap:20px;
+
+}
+
+/* استایل دکمه ها*/
+
+.primary{
+
+background:white;
+
+color:black;
+  font-size: 14px;
+padding-inline:24px;
+
+border-radius:999px;
+
+}
+
+.secondary{
+
+border:1px solid #4b5563;
+
+
+
+padding-inline: 24px;
+padding-block: 9px;
+border-radius:999px;
+
+}
+/*سمت راست*/
+.hero-right{
+
+position:relative;
+
+overflow:hidden;
+
+
+}
+.grid-bg{
+
+position:absolute;
+
+inset:0;
+
+background-image:
+
+linear-gradient(rgba(255,255,255,.12) 1px,transparent 1px),
+
+linear-gradient(90deg,rgba(255,255,255,.12) 1px,transparent 1px);
+
+background-size:20px 20px;
+
+opacity:.4;
+
+}

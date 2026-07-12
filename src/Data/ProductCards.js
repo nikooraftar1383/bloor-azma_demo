@@ -1,8 +1,8 @@
 const ProductCards = [
   {
     id: 1,
-    title: "product your podcast",
-    price: "120$",
+    title: "write your srory",
+    price: "$120",
     author: "Mina",
     role: "Brand Designer",
     image: "/public/ProductCards/1.jpg",

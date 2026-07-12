@@ -1,0 +1,1176 @@
+import "../css/BorderStyle.css";
+
+let Boxtemplate = () => {
+  return (
+    <>
+      <div className="w-[61%] mx-auto flex flex-col  h-132.5">
+        <span className="text-[11px] text-[#a0a7b2] font-semibold space-y-8">
+          Builder Network
+        </span>
+        <p className="text-[32px] font-bold my-3.5">
+          Find the people your work needs
+        </p>
+        <div className="flex relative ">
+          <div className="   w-[35%]">
+            <span className="text-[16px] text-[#6b7280] pe-20">
+              Connect with people who make, build, design, edit, write, launch,
+              and care about the same kind of work you do.
+            </span>
+          </div>
+          <div className="absolute left-35 top-0  px-0">
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-muted"
+              width="768"
+              height="384"
+              viewBox="0 0 200 100"
+            >
+              <g
+                stroke="#D1D5DB"
+                fill="none"
+                stroke-width="0.5px"
+                stroke-dasharray="100 100"
+                pathLength="100"
+                marker-start="url(#net-circle-marker)"
+              >
+                <path
+                  stroke-dasharray="100 100"
+                  pathLength="100"
+                  d="M 85 49 h 35"
+                  stroke="#D1D5DB"
+                  fill="none"
+                  stroke-width="0.5px"
+                ></path>
+                <path
+                  stroke-dasharray="100 100"
+                  pathLength="100"
+                  d="M 145 19 h -22 q -5 0 -5 5 v 18"
+                  stroke="#D1D5DB"
+                  fill="none"
+                  stroke-width="0.5px"
+                ></path>
+                <path
+                  stroke-dasharray="100 100"
+                  pathLength="100"
+                  d="M 130 73 h -12 q -5 0 -5 -5 v -15"
+                  stroke="#D1D5DB"
+                  fill="none"
+                  stroke-width="0.5px"
+                ></path>
+                <path
+                  d="M 70 35 v -18 q 0 -5 5 -5 h 65 q 5 0 5 5 v 12"
+                  stroke="#D1D5DB"
+                  fill="none"
+                  stroke-width="0.5px"
+                ></path>
+                <path
+                  d="M 172 33 v 27 q 0 5 -5 5 h -32"
+                  stroke="#D1D5DB"
+                  fill="none"
+                  stroke-width="0.5px"
+                ></path>
+                <path
+                  d="M 130 79 h -48 q -5 0 -5 -5 v -11"
+                  marker-end="url(#net-circle-marker)"
+                  stroke="#D1D5DB"
+                  fill="none"
+                  stroke-width="0.5px"
+                ></path>
+                <animate
+                  attributeName="stroke-dashoffset"
+                  from="100"
+                  to="0"
+                  dur="1s"
+                  fill="none"
+                  calcMode="spline"
+                  keySplines="0.25,0.1,0.5,1"
+                  keyTimes="0; 1"
+                  stroke="#D1D5DB"
+                  stroke-width="0.5px"
+                ></animate>
+              </g>
+              <g mask="url(#net-mask-1)">
+                <circle
+                  class="cpu-architecture cpu-line-1"
+                  cx="0"
+                  cy="0"
+                  r="8"
+                  fill='url("#net-purple-grad")'
+                ></circle>
+              </g>
+              <g mask="url(#net-mask-2)">
+                <circle
+                  class="cpu-architecture cpu-line-2"
+                  cx="0"
+                  cy="0"
+                  r="8"
+                  fill='url("#net-cyan-grad")'
+                ></circle>
+              </g>
+              <g mask="url(#net-mask-4)">
+                <circle
+                  class="cpu-architecture cpu-line-3"
+                  cx="0"
+                  cy="0"
+                  r="8"
+                  fill='url("#net-green-grad")'
+                ></circle>
+              </g>
+              <g mask="url(#net-mask-3)">
+                <circle
+                  class="cpu-architecture cpu-line-4"
+                  cx="0"
+                  cy="0"
+                  r="8"
+                  fill='url("#net-orange-grad")'
+                ></circle>
+              </g>
+              <g mask="url(#net-mask-5)">
+                <circle
+                  class="cpu-architecture cpu-line-5"
+                  cx="0"
+                  cy="0"
+                  r="8"
+                  fill='url("#net-rose-grad")'
+                ></circle>
+              </g>
+              <g mask="url(#net-mask-6)">
+                <circle
+                  class="cpu-architecture cpu-line-6"
+                  cx="0"
+                  cy="0"
+                  r="8"
+                  fill='url("#net-blue-grad")'
+                ></circle>
+              </g>
+              <g>
+                <rect
+                  x="96.7"
+                  y="36.7"
+                  width="26.6"
+                  height="26.6"
+                  rx="5.3"
+                  fill="none"
+                  stroke-width="0.8px"
+                  stroke-linecap="round"
+                  stroke='url("#net-glow-fade-spin")'
+                  stroke-dasharray="27 80"
+                >
+                  <animate
+                    attributeName="stroke-dashoffset"
+                    values="107;0"
+                    dur="3s"
+                    repeatCount="indefinite"
+                    stroke='url("#net-glow-fade-spin")'
+                    fill="none"
+                    stroke-width="0.8px"
+                  ></animate>
+                </rect>
+                <rect
+                  x="97"
+                  y="37"
+                  width="26"
+                  height="26"
+                  rx="5"
+                  fill="#F3F4F6"
+                  stroke="#E5E7EB"
+                  stroke-width="0.3px"
+                >
+                  <animate
+                    attributeName="width"
+                    values="26;26;29;26;28;26"
+                    dur="3s"
+                    begin="2.5s"
+                    repeatCount="indefinite"
+                    keyTimes="0;0.82;0.86;0.90;0.94;1"
+                    stroke="#E5E7EB"
+                    fill="#F3F4F6"
+                    stroke-width="0.3px"
+                  ></animate>
+                  <animate
+                    attributeName="height"
+                    values="26;26;29;26;28;26"
+                    dur="3s"
+                    begin="2.5s"
+                    repeatCount="indefinite"
+                    keyTimes="0;0.82;0.86;0.90;0.94;1"
+                    stroke="#E5E7EB"
+                    fill="#F3F4F6"
+                    stroke-width="0.3px"
+                  ></animate>
+                  <animate
+                    attributeName="x"
+                    values="97;97;95.5;97;96;97"
+                    dur="3s"
+                    begin="2.5s"
+                    repeatCount="indefinite"
+                    keyTimes="0;0.82;0.86;0.90;0.94;1"
+                    stroke="#E5E7EB"
+                    fill="#F3F4F6"
+                    stroke-width="0.3px"
+                  ></animate>
+                  <animate
+                    attributeName="y"
+                    values="37;37;35.5;37;36;37"
+                    dur="3s"
+                    begin="2.5s"
+                    repeatCount="indefinite"
+                    keyTimes="0;0.82;0.86;0.90;0.94;1"
+                    stroke="#E5E7EB"
+                    fill="#F3F4F6"
+                    stroke-width="0.3px"
+                  ></animate>
+                </rect>
+                <rect
+                  x="97"
+                  y="37"
+                  width="26"
+                  height="26"
+                  rx="5"
+                  fill='url("#net-internal-glow")'
+                  opacity="0"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="0;0;0.5;0.1;0.4;0"
+                    dur="3s"
+                    begin="2.5s"
+                    repeatCount="indefinite"
+                    keyTimes="0;0.82;0.86;0.90;0.94;1"
+                    fill='url("#net-internal-glow")'
+                  ></animate>
+                  <animate
+                    attributeName="width"
+                    values="26;26;29;26;28;26"
+                    dur="3s"
+                    begin="2.5s"
+                    repeatCount="indefinite"
+                    keyTimes="0;0.82;0.86;0.90;0.94;1"
+                    fill='url("#net-internal-glow")'
+                  ></animate>
+                  <animate
+                    attributeName="height"
+                    values="26;26;29;26;28;26"
+                    dur="3s"
+                    begin="2.5s"
+                    repeatCount="indefinite"
+                    keyTimes="0;0.82;0.86;0.90;0.94;1"
+                    fill='url("#net-internal-glow")'
+                  ></animate>
+                  <animate
+                    attributeName="x"
+                    values="97;97;95.5;97;96;97"
+                    dur="3s"
+                    begin="2.5s"
+                    repeatCount="indefinite"
+                    keyTimes="0;0.82;0.86;0.90;0.94;1"
+                    fill='url("#net-internal-glow")'
+                  ></animate>
+                  <animate
+                    attributeName="y"
+                    values="37;37;35.5;37;36;37"
+                    dur="3s"
+                    begin="2.5s"
+                    repeatCount="indefinite"
+                    keyTimes="0;0.82;0.86;0.90;0.94;1"
+                    fill='url("#net-internal-glow")'
+                  ></animate>
+                </rect>
+                <image
+                  href="/public/images/footer/Karo.svg"
+                  x="100"
+                  y="40"
+                  width="20"
+                  height="20"
+                >
+                  <animate
+                    attributeName="width"
+                    values="20;20;24;20;22;20"
+                    dur="3s"
+                    begin="2.5s"
+                    repeatCount="indefinite"
+                    keyTimes="0;0.82;0.86;0.90;0.94;1"
+                  ></animate>
+                  <animate
+                    attributeName="height"
+                    values="20;20;24;20;22;20"
+                    dur="3s"
+                    begin="2.5s"
+                    repeatCount="indefinite"
+                    keyTimes="0;0.82;0.86;0.90;0.94;1"
+                  ></animate>
+                  <animate
+                    attributeName="x"
+                    values="100;100;98;100;99;100"
+                    dur="3s"
+                    begin="2.5s"
+                    repeatCount="indefinite"
+                    keyTimes="0;0.82;0.86;0.90;0.94;1"
+                  ></animate>
+                  <animate
+                    attributeName="y"
+                    values="40;40;38;40;39;40"
+                    dur="3s"
+                    begin="2.5s"
+                    repeatCount="indefinite"
+                    keyTimes="0;0.82;0.86;0.90;0.94;1"
+                  ></animate>
+                </image>
+              </g>
+              <g>
+                <rect
+                  x="30"
+                  y="35"
+                  width="55"
+                  height="28"
+                  rx="4"
+                  fill="#F3F4F6"
+                  stroke="#E5E7EB"
+                  stroke-width="0.3px"
+                ></rect>
+                <text
+                  x="36"
+                  y="45"
+                  font-size="3.5"
+                  fill="#A78BFA"
+                  font-weight="800"
+                >
+                  Discover people
+                </text>
+                <text x="36" y="51" font-size="2.5" fill="#6B7280">
+                  Find makers by skills,
+                </text>
+                <text x="36" y="55.5" font-size="2.5" fill="#6B7280">
+                  interests, or location.
+                </text>
+              </g>
+              <g>
+                <rect
+                  x="145"
+                  y="5"
+                  width="55"
+                  height="28"
+                  rx="4"
+                  fill="#F3F4F6"
+                  stroke="#E5E7EB"
+                  stroke-width="0.3px"
+                ></rect>
+                <text
+                  x="150"
+                  y="15"
+                  font-size="3.5"
+                  fill="#14B8A6"
+                  font-weight="800"
+                >
+                  Start conversations
+                </text>
+                <text x="150" y="21" font-size="2.5" fill="#6B7280">
+                  Reach out, propose a
+                </text>
+                <text x="150" y="25.5" font-size="2.5" fill="#6B7280">
+                  collab, or join a project.
+                </text>
+              </g>
+              <g>
+                <rect
+                  x="130"
+                  y="63"
+                  width="55"
+                  height="28"
+                  rx="4"
+                  fill="#F3F4F6"
+                  stroke="#E5E7EB"
+                  stroke-width="0.3px"
+                ></rect>
+                <text
+                  x="136"
+                  y="73"
+                  font-size="3.5"
+                  fill="#F59E0B"
+                  font-weight="800"
+                >
+                  Grow through work
+                </text>
+                <text x="136" y="79" font-size="2.5" fill="#6B7280">
+                  The more you share, the
+                </text>
+                <text x="136" y="83.5" font-size="2.5" fill="#6B7280">
+                  easier people find you.
+                </text>
+              </g>
+              <defs>
+                <mask id="net-mask-1">
+                  <path
+                    d="M 85 49 h 35"
+                    stroke-width="0.5"
+                    stroke="white"
+                  ></path>
+                </mask>
+                <mask id="net-mask-2">
+                  <path
+                    d="M 145 19 h -22 q -5 0 -5 5 v 18"
+                    stroke-width="0.5"
+                    stroke="white"
+                  ></path>
+                </mask>
+                <mask id="net-mask-3">
+                  <path
+                    d="M 130 73 h -12 q -5 0 -5 -5 v -15"
+                    stroke-width="0.5"
+                    stroke="white"
+                  ></path>
+                </mask>
+                <mask id="net-mask-4">
+                  <path
+                    d="M 70 35 v -18 q 0 -5 5 -5 h 65 q 5 0 5 5 v 12"
+                    stroke-width="0.5"
+                    stroke="white"
+                  ></path>
+                </mask>
+                <mask id="net-mask-5">
+                  <path
+                    d="M 172 33 v 27 q 0 5 -5 5 h -32"
+                    stroke-width="0.5"
+                    stroke="white"
+                  ></path>
+                </mask>
+                <mask id="net-mask-6">
+                  <path
+                    d="M 130 79 h -48 q -5 0 -5 -5 v -11"
+                    stroke-width="0.5"
+                    stroke="white"
+                  ></path>
+                </mask>
+                <radialGradient id="net-blue-grad" fx="1">
+                  <stop offset="0%" stop-color="#00E8ED"></stop>
+                  <stop offset="50%" stop-color="#08F"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <radialGradient id="net-purple-grad" fx="1">
+                  <stop offset="0%" stop-color="#a78bfa"></stop>
+                  <stop offset="50%" stop-color="#7c3aed"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <radialGradient id="net-green-grad" fx="1">
+                  <stop offset="0%" stop-color="#22c55e"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <radialGradient id="net-orange-grad" fx="1">
+                  <stop offset="0%" stop-color="#f97316"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <radialGradient id="net-cyan-grad" fx="1">
+                  <stop offset="0%" stop-color="#06b6d4"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <radialGradient id="net-rose-grad" fx="1">
+                  <stop offset="0%" stop-color="#f43f5e"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <radialGradient id="net-yellow-grad" fx="1">
+                  <stop offset="0%" stop-color="#FFD800"></stop>
+                  <stop offset="50%" stop-color="#f59e0b"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <radialGradient id="net-white-grad" fx="1">
+                  <stop offset="0%" stop-color="white"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <linearGradient
+                  id="net-glow-spin"
+                  gradientUnits="userSpaceOnUse"
+                  x1="96"
+                  y1="36"
+                  x2="124"
+                  y2="64"
+                >
+                  <stop offset="0%" stop-color="#7c3aed"></stop>
+                  <stop offset="25%" stop-color="#ec4899"></stop>
+                  <stop offset="50%" stop-color="#14b8a6"></stop>
+                  <stop offset="75%" stop-color="#f59e0b"></stop>
+                  <stop offset="100%" stop-color="#7c3aed"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="net-glow-fade-spin"
+                  gradientUnits="userSpaceOnUse"
+                  x1="96"
+                  y1="36"
+                  x2="124"
+                  y2="64"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0"
+                  ></stop>
+                  <stop
+                    offset="15%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.8"
+                  ></stop>
+                  <stop
+                    offset="35%"
+                    stop-color="#ec4899"
+                    stop-opacity="1"
+                  ></stop>
+                  <stop
+                    offset="50%"
+                    stop-color="#14b8a6"
+                    stop-opacity="1"
+                  ></stop>
+                  <stop
+                    offset="65%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.8"
+                  ></stop>
+                  <stop
+                    offset="85%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="net-internal-glow"
+                  x1="0"
+                  y1="0"
+                  x2="1"
+                  y2="1"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="30%"
+                    stop-color="#ec4899"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="60%"
+                    stop-color="#14b8a6"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <filter
+                  id="net-shadow"
+                  x="-50%"
+                  y="-50%"
+                  width="200%"
+                  height="200%"
+                >
+                  <feDropShadow
+                    dx="1"
+                    dy="1"
+                    stdDeviation="1.5"
+                    flood-color="#7c3aed"
+                    flood-opacity="0.3"
+                  ></feDropShadow>
+                </filter>
+                <marker
+                  id="net-circle-marker"
+                  viewBox="0 0 10 10"
+                  refX="5"
+                  refY="5"
+                  markerWidth="14"
+                  markerHeight="14"
+                >
+                  <circle
+                    cx="5"
+                    cy="5"
+                    r="2"
+                    fill="#e5e7eb"
+                    stroke="#d1d5db"
+                    stroke-width="0.5"
+                  >
+                    <animate
+                      attributeName="r"
+                      values="0; 3; 2"
+                      dur="0.5s"
+                    ></animate>
+                  </circle>
+                </marker>
+                <radialGradient id="net-purple-grad" fx="1">
+                  <stop offset="0%" stop-color="#a78bfa"></stop>
+                  <stop offset="50%" stop-color="#7c3aed"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <radialGradient id="net-cyan-grad" fx="1">
+                  <stop offset="0%" stop-color="#06b6d4"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <radialGradient id="net-green-grad" fx="1">
+                  <stop offset="0%" stop-color="#22c55e"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <radialGradient id="net-orange-grad" fx="1">
+                  <stop offset="0%" stop-color="#f97316"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <radialGradient id="net-rose-grad" fx="1">
+                  <stop offset="0%" stop-color="#f43f5e"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <radialGradient id="net-blue-grad" fx="1">
+                  <stop offset="0%" stop-color="#00E8ED"></stop>
+                  <stop offset="50%" stop-color="#08F"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <linearGradient
+                  id="net-glow-fade-spin"
+                  gradientUnits="userSpaceOnUse"
+                  x1="96"
+                  y1="36"
+                  x2="124"
+                  y2="64"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0"
+                  ></stop>
+                  <stop
+                    offset="15%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.8"
+                  ></stop>
+                  <stop
+                    offset="35%"
+                    stop-color="#ec4899"
+                    stop-opacity="1"
+                  ></stop>
+                  <stop
+                    offset="50%"
+                    stop-color="#14b8a6"
+                    stop-opacity="1"
+                  ></stop>
+                  <stop
+                    offset="65%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.8"
+                  ></stop>
+                  <stop
+                    offset="85%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="net-glow-fade-spin"
+                  gradientUnits="userSpaceOnUse"
+                  x1="96"
+                  y1="36"
+                  x2="124"
+                  y2="64"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0"
+                  ></stop>
+                  <stop
+                    offset="15%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.8"
+                  ></stop>
+                  <stop
+                    offset="35%"
+                    stop-color="#ec4899"
+                    stop-opacity="1"
+                  ></stop>
+                  <stop
+                    offset="50%"
+                    stop-color="#14b8a6"
+                    stop-opacity="1"
+                  ></stop>
+                  <stop
+                    offset="65%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.8"
+                  ></stop>
+                  <stop
+                    offset="85%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="net-internal-glow"
+                  x1="0"
+                  y1="0"
+                  x2="1"
+                  y2="1"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="30%"
+                    stop-color="#ec4899"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="60%"
+                    stop-color="#14b8a6"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="net-internal-glow"
+                  x1="0"
+                  y1="0"
+                  x2="1"
+                  y2="1"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="30%"
+                    stop-color="#ec4899"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="60%"
+                    stop-color="#14b8a6"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="net-internal-glow"
+                  x1="0"
+                  y1="0"
+                  x2="1"
+                  y2="1"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="30%"
+                    stop-color="#ec4899"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="60%"
+                    stop-color="#14b8a6"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="net-internal-glow"
+                  x1="0"
+                  y1="0"
+                  x2="1"
+                  y2="1"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="30%"
+                    stop-color="#ec4899"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="60%"
+                    stop-color="#14b8a6"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="net-internal-glow"
+                  x1="0"
+                  y1="0"
+                  x2="1"
+                  y2="1"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="30%"
+                    stop-color="#ec4899"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="60%"
+                    stop-color="#14b8a6"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="net-internal-glow"
+                  x1="0"
+                  y1="0"
+                  x2="1"
+                  y2="1"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="30%"
+                    stop-color="#ec4899"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="60%"
+                    stop-color="#14b8a6"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <radialGradient id="net-purple-grad" fx="1">
+                  <stop offset="0%" stop-color="#a78bfa"></stop>
+                  <stop offset="50%" stop-color="#7c3aed"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <radialGradient id="net-cyan-grad" fx="1">
+                  <stop offset="0%" stop-color="#06b6d4"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <radialGradient id="net-green-grad" fx="1">
+                  <stop offset="0%" stop-color="#22c55e"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <radialGradient id="net-orange-grad" fx="1">
+                  <stop offset="0%" stop-color="#f97316"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <radialGradient id="net-rose-grad" fx="1">
+                  <stop offset="0%" stop-color="#f43f5e"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <radialGradient id="net-blue-grad" fx="1">
+                  <stop offset="0%" stop-color="#00E8ED"></stop>
+                  <stop offset="50%" stop-color="#08F"></stop>
+                  <stop offset="100%" stop-color="transparent"></stop>
+                </radialGradient>
+                <linearGradient
+                  id="net-glow-fade-spin"
+                  gradientUnits="userSpaceOnUse"
+                  x1="96"
+                  y1="36"
+                  x2="124"
+                  y2="64"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0"
+                  ></stop>
+                  <stop
+                    offset="15%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.8"
+                  ></stop>
+                  <stop
+                    offset="35%"
+                    stop-color="#ec4899"
+                    stop-opacity="1"
+                  ></stop>
+                  <stop
+                    offset="50%"
+                    stop-color="#14b8a6"
+                    stop-opacity="1"
+                  ></stop>
+                  <stop
+                    offset="65%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.8"
+                  ></stop>
+                  <stop
+                    offset="85%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="net-glow-fade-spin"
+                  gradientUnits="userSpaceOnUse"
+                  x1="96"
+                  y1="36"
+                  x2="124"
+                  y2="64"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0"
+                  ></stop>
+                  <stop
+                    offset="15%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.8"
+                  ></stop>
+                  <stop
+                    offset="35%"
+                    stop-color="#ec4899"
+                    stop-opacity="1"
+                  ></stop>
+                  <stop
+                    offset="50%"
+                    stop-color="#14b8a6"
+                    stop-opacity="1"
+                  ></stop>
+                  <stop
+                    offset="65%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.8"
+                  ></stop>
+                  <stop
+                    offset="85%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="net-internal-glow"
+                  x1="0"
+                  y1="0"
+                  x2="1"
+                  y2="1"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="30%"
+                    stop-color="#ec4899"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="60%"
+                    stop-color="#14b8a6"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="net-internal-glow"
+                  x1="0"
+                  y1="0"
+                  x2="1"
+                  y2="1"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="30%"
+                    stop-color="#ec4899"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="60%"
+                    stop-color="#14b8a6"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="net-internal-glow"
+                  x1="0"
+                  y1="0"
+                  x2="1"
+                  y2="1"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="30%"
+                    stop-color="#ec4899"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="60%"
+                    stop-color="#14b8a6"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="net-internal-glow"
+                  x1="0"
+                  y1="0"
+                  x2="1"
+                  y2="1"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="30%"
+                    stop-color="#ec4899"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="60%"
+                    stop-color="#14b8a6"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="net-internal-glow"
+                  x1="0"
+                  y1="0"
+                  x2="1"
+                  y2="1"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="30%"
+                    stop-color="#ec4899"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="60%"
+                    stop-color="#14b8a6"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  id="net-internal-glow"
+                  x1="0"
+                  y1="0"
+                  x2="1"
+                  y2="1"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#7c3aed"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="30%"
+                    stop-color="#ec4899"
+                    stop-opacity="0.2"
+                  ></stop>
+                  <stop
+                    offset="60%"
+                    stop-color="#14b8a6"
+                    stop-opacity="0.3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#f59e0b"
+                    stop-opacity="0.2"
+                  ></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+export default Boxtemplate;

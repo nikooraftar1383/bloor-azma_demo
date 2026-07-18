@@ -46,8 +46,8 @@ let Menu = () => {
             <div className="  w-[55%] ">
               <ul className=" flex justify-between items-center ">
                 <li className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]">
-                  <NavLink />
-                  Product
+                 <NavLink to={"/Products"}>products</NavLink>
+                 
                 </li>
                 <li className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]">
                   <NavLink />

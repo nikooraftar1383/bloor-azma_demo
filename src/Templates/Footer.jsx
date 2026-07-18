@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 let Footer = () => {
   return (
     <>
-      <div className="w-17 h-17 flex justify-center items-center rounded-full  bg-[#eff1f2] cursor-pointer border border-[#d9dcde] mx-auto ">
+      <div className="w-17 h-17 flex justify-center items-center rounded-full  bg-[#eff1f2] cursor-pointer border border-[#d9dcde] mx-auto mt-5 ">
         <img src="/public/images/footer/Karo.svg" alt="" className="w-8" />
       </div>
-      <div className="w-[29%] mx-auto flex items-center  mt-8 ">
+      <div className="w-[29%] mx-auto flex items-center  mt-8  ">
         <ul className="flex gap-4 justify-between text-[14px] text-[#8f9090] w-full  ">
           <li className="hover:text-[#c8ced4]">
             <Link>Product</Link>
@@ -39,7 +39,7 @@ let Footer = () => {
         </div>
       </div>
       <div className="w-11  h-[0.5px] border-[#e1dfdf] border-t border-[0.25px] flex mx-auto mt-7 "></div>
-      <div className="flex flex-col mx-auto text-[12px] text-[#b3b3b4] mt-2 w-[20%] ">
+      <div className="flex flex-col mx-auto text-[12px] text-[#b3b3b4] mt-2 w-[20%] mb-5 ">
         <span className="text-center">
           © 2026 Karo Studio. All rights reserved.
         </span>

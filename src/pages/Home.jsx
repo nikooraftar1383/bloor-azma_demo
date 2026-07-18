@@ -16,7 +16,7 @@ let Home =()=>{
     <Carousel/>
     <Boxtemplate/>
     <HeroCards/>
-    <Footer/>
+    
 
     </>
 }

@@ -17,9 +17,9 @@ function HeroCards() {
           </span>
 
           <div className="buttons">
-            <button className="primary ">Contact us</button>
+            <button className="primary hover:scale-105 cursor-pointer">Contact us</button>
 
-            <button className="secondary text-[#b8babf] ">
+            <button className="secondary text-[#b8babf] hover:scale-105 cursor-pointer ">
               Explore Products
             </button>
           </div>

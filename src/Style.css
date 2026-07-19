@@ -5,12 +5,18 @@
   src: url(/public/fonts/Inter-Medium.woff2);
   font-weight: 300;
 }
+@font-face {
+  font-family:"Kalame" ;
+  src: url(/public/fonts/KalamehWebFaNum-Medium.woff2);
+}
 body {
   font-family: "nikoo";
   background: white;
   color: black;
 }
-
+.font-fa {
+  font-family: "Kalame";
+}
 body.dark {
   color: #966e30;
 }

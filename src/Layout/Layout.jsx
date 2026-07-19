@@ -6,7 +6,7 @@ let Layout = ({children})=>{
     return<>
     <Menu/>
     {children}
-    
+    <Footer/>
     </>
 }
 export default Layout

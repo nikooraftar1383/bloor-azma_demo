@@ -1,38 +1,41 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../css/BorderStyle.css";
 import { useEffect, useState } from "react";
+
 let Menu = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled((prev) => {
+        if (prev) {
+          // اگه الان scrolled هست، فقط وقتی برگرده false که خیلی بالا بره
+          return window.scrollY > 30;
+        } else {
+          // اگه الان scrolled نیست، فقط وقتی true بشه که واقعا رد کنه از 51
+          return window.scrollY > 51;
+        }
+      });
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <>
-      <div
-        className={`   ${isScrolled ? " w-full  " : "w-[61%] mx-auto py-6.5  "}`}
+      {/* این div فقط جای هدر ثابت رو نگه می‌داره - ارتفاعش نباید بسته به isScrolled عوض بشه */}
+      <div className="h-[104px]" />
+
+      <header
+        className={`
+          fixed top-0 left-0 w-full z-100
+          transition-all duration-500
+          ${isScrolled ? "bg-white/20 backdrop-blur-md shadow-md py-3" : "bg-transparent py-6"}
+        `}
       >
-        <header
-          className={`
-    fixed
-    top-0
-    left-0
-    w-full
-    z-100
-    transition-all
-    duration-500
-    ${isScrolled ? "bg-white/20 backdrop-blur-md shadow-md py-3" : "bg-transparent py-6"}
-  `}
-        >
-          <div className="w-[61%] mx-auto flex justify-between items-center">
-            <div className="flex justify-center gap-2  items-center">
+        <div className="w-[61%] mx-auto flex justify-between items-center">
+          <div className="flex justify-center gap-2  items-center">
               <img
                 src="/public/images/karospace.svg"
                 alt=""
@@ -58,8 +61,8 @@ let Menu = () => {
                   Partnership
                 </li>
                 <li>
-                  <button className={` cursor-pointer btn border border-[#e5e7eb] text-black  font-bold  rounded-full hover:scale-110 transition ${isScrolled?"text-[12px] px-5 py-2.5":"leading-11 text-[15px] px-6.5 "}`}>
-                    <NavLink />
+                  <button className={` cursor-pointer btn border border-[#e5e7eb] bg-[#FAFAFA]  text-black  font-bold  rounded-full hover:scale-110  ${isScrolled?"text-[12px] px-5 py-2.5":"leading-11 text-[15px] px-6.5 "}`}>
+                    
                     Sign in
                   </button>
                 </li>
@@ -71,10 +74,13 @@ let Menu = () => {
                 </li>
               </ul>
             </div>
-          </div>
-        </header>
-      </div>
+        </div>
+      </header>
     </>
   );
 };
+
 export default Menu;
+
+
+

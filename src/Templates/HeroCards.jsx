@@ -1,6 +1,5 @@
 import "../css/BorderStyle.css";
-import GridBackground from "./GridBackground";
-import Network from "./Network";
+
 function HeroCards() {
   return (
     <section className="flex justify-center py-24">
@@ -27,8 +26,7 @@ function HeroCards() {
 
         <div className="hero-right">
              
-             <GridBackground />
-      <Network />
+    
         </div>
       </div>
      

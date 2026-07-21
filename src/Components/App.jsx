@@ -3,6 +3,9 @@ import Home from "../pages/Home"
 import Layout from "../Layout/Layout"
 import Products from "../pages/Products"
 import ProductDetails from "../pages/ProductDetails"
+import AboutUs from "../pages/AboutUs"
+
+
 
 let App= ()=>{
     return<>
@@ -12,6 +15,7 @@ let App= ()=>{
         <Route element={<Home/>} path="/"/>
         <Route element={<Products/>} path="/products"/>
         <Route element={<ProductDetails/>} path="/products/:id"/>
+        <Route element={<AboutUs/>} path="/AboutUs"/>
     </Routes>
     </Layout>
     </BrowserRouter>

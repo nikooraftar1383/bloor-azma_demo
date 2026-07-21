@@ -25,7 +25,7 @@ let Menu = () => {
   return (
     <>
       {/* این div فقط جای هدر ثابت رو نگه می‌داره - ارتفاعش نباید بسته به isScrolled عوض بشه */}
-      <div className="h-[104px]" />
+      <div className="h-[1px]" />
 
       <header
         className={`
@@ -36,44 +36,45 @@ let Menu = () => {
       >
         <div className="w-[61%] mx-auto flex justify-between items-center">
           <div className="flex justify-center gap-2  items-center">
-              <img
-                src="/public/images/karospace.svg"
-                alt=""
-                className={` ${isScrolled ? "w-30.5 h-8" : "w-42.25 h-11"}`}
-              />
-              <div className="flex rounded-full px-1.5 justify-center items-center gap-1 h-8 btn-border border hover:scale-110 transition py-0.5">
-                <div className=" circle "></div>
-                <span className="text-[12px]">Ask Kariva</span>
-              </div>
+            <img
+              src="/public/images/karospace.svg"
+              alt=""
+              className={` ${isScrolled ? "w-30.5 h-8" : "w-42.25 h-11"}`}
+            />
+            <div className="flex rounded-full px-1.5 justify-center items-center gap-1 h-8 btn-border border hover:scale-110 transition py-0.5">
+              <div className=" circle "></div>
+              <span className="text-[12px]">Ask Kariva</span>
             </div>
-            <div className="  w-[55%] ">
-              <ul className=" flex justify-between items-center ">
-                <li className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]">
-                 <NavLink to={"/Products"}>products</NavLink>
-                 
-                </li>
-                <li className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]">
+          </div>
+          <div className="  w-[55%] ">
+            <ul className=" flex justify-between items-center ">
+              <li className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]">
+                <NavLink to="/products">products</NavLink>
+              </li>
+              <li className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]">
+                <NavLink to="/AboutUs">AboutUs</NavLink>
+              </li>
+              <li className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]">
+                <NavLink />
+                Partnership
+              </li>
+              <li>
+                <button
+                  className={` cursor-pointer btn border border-[#e5e7eb] bg-[#FAFAFA]  text-black  font-bold  rounded-full hover:scale-110  ${isScrolled ? "text-[12px] px-5 py-2.5" : "leading-11 text-[15px] px-6.5 "}`}
+                >
+                  Sign in
+                </button>
+              </li>
+              <li>
+                <button
+                  className={`cursor-pointer btn bg-[#14b8a6] text-white  font-bold  rounded-full hover:scale-110 transition ${isScrolled ? "text-[12px] px-5 py-2.5" : "text-[15px] leading-11 px-6.5"}`}
+                >
                   <NavLink />
-                  Community
-                </li>
-                <li className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]">
-                  <NavLink />
-                  Partnership
-                </li>
-                <li>
-                  <button className={` cursor-pointer btn border border-[#e5e7eb] bg-[#FAFAFA]  text-black  font-bold  rounded-full hover:scale-110  ${isScrolled?"text-[12px] px-5 py-2.5":"leading-11 text-[15px] px-6.5 "}`}>
-                    
-                    Sign in
-                  </button>
-                </li>
-                <li>
-                  <button className={`cursor-pointer btn bg-[#14b8a6] text-white  font-bold  rounded-full hover:scale-110 transition ${isScrolled?"text-[12px] px-5 py-2.5":"text-[15px] leading-11 px-6.5"}`}>
-                    <NavLink />
-                    Sign up
-                  </button>
-                </li>
-              </ul>
-            </div>
+                  Sign up
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
     </>
@@ -81,6 +82,3 @@ let Menu = () => {
 };
 
 export default Menu;
-
-
-

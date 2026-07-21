@@ -1,66 +1,61 @@
 import { useEffect, useState } from "react";
-import ProductHero from "./ProductHero"
-import SearchBar from "./SearchBar"
+import ProductHero from "./ProductHero";
+import SearchBar from "./SearchBar";
 import ProductGrid from "./ProductGrid";
 import Pagination from "./Pagination";
 
+let ProductTemp = () => {
+  let [search, setsearch] = useState("");
+  let [products, setProducts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 6;
 
-let ProductTemp =()=>{
-let [search,setsearch]=useState("")
-let [products, setProducts] = useState([]);
-const [currentPage, setCurrentPage] = useState(1);
-const productsPerPage = 8;
-     
-  let getData=async()=>{
-    try{
-        let res=await fetch("http://localhost:4000/products")
-        if(res.status==200){
-            let data=await res.json()
-            setProducts(data)
-            
-            
-        }
-        else{
-            console.log("eror drim")
-        }
+  let getData = async () => {
+    try {
+      let res = await fetch("http://localhost:4000/products");
+      if (res.status == 200) {
+        let data = await res.json();
+        setProducts(data);
+      } else {
+        console.log("eror drim");
+      }
+    } catch (err) {
+      console.log(err.message);
     }
-    catch(err){
-        console.log(err.message);
-    }
-  }
+  };
   const filteredProducts = products.filter((product) =>
-    product.title.toLowerCase().includes(search.toLowerCase())
+    product.title.toLowerCase().includes(search.toLowerCase()),
   );
   const indexOfLastProduct = currentPage * productsPerPage;
-const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
 
-const currentProducts = filteredProducts.slice(
-  indexOfFirstProduct,
-  indexOfLastProduct
-);
-const totalPages = Math.ceil(
-  filteredProducts.length / productsPerPage
-);
-  
-  useEffect(() => {getData();
-setCurrentPage(1);
+  const currentProducts = filteredProducts.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct,
+  );
+  const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+
+  useEffect(() => {
+    getData();
+    setCurrentPage(1);
   }, [search]);
 
-  
-  
-return<>
-{products && (
- <> <ProductHero/>
-    <SearchBar search={search} setsearch={setsearch}/>
-    <ProductGrid products={currentProducts} />
-    <Pagination
-    currentPage={currentPage}
-    totalPages={totalPages}
-    setCurrentPage={setCurrentPage}
-/>
- </>
-)}
-</>
-
-}
-export default ProductTemp
+  return (
+    <>
+      {products && (
+        <>
+          {" "}
+          <ProductHero search={search} setsearch={setsearch}/>
+         
+          <ProductGrid products={currentProducts} />
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            setCurrentPage={setCurrentPage}
+          />
+        </>
+      )}
+    </>
+  );
+};
+export default ProductTemp;

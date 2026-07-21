@@ -25,7 +25,7 @@ let ProductDetailTemp =()=>{
 console.log(product);
 
 return<>
- 
+ {product && <h1>{product.title}</h1>}
 
 </>
 }

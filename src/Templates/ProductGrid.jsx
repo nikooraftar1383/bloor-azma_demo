@@ -7,8 +7,8 @@ let ProductGrid = ({ products }) =>
    
 
   return <>
-    <div className="  mt-10 via-[#dcdde2] bg-linear-to-b from-white to-white p-5  ">
-         <div className="grid grid-cols-4 w-[90%] mx-auto  gap-8">
+    <div className="  mt-10 via-[#dcdde2] bg-linear-to-b from-white to-white p-5  pt-10 ">
+         <div className="grid grid-cols-3 w-[90%] mx-auto  gap-8 gap-y-30">
       {products.map((product) => (
         <ProductCart
           key={product.id}

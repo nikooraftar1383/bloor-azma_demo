@@ -55,8 +55,8 @@ let Menu = () => {
                 <NavLink to="/AboutUs">AboutUs</NavLink>
               </li>
               <li className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]">
-                <NavLink />
-                Partnership
+                <NavLink to="/ContactUs">ContactUs</NavLink>
+                
               </li>
               <li>
                 <button

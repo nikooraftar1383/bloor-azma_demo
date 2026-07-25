@@ -3,7 +3,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 let ProductCart =({product})=>{
-     console.log(product);
+  
 return<>
  <Link to={`/products/${product.title}`}>
  <div className="
@@ -25,9 +25,9 @@ return<>
 
       <h3 className="mt-4 font-semibold text-[16px] h-10 font-fa" dir="rtl">
             {
-  product.short_desc.length > 70
-    ? `${product.short_desc.slice(0, 70)}...`
-    : product.short_desc
+  product.title.length > 85
+    ? `${product.title.slice(0, 85)}...`
+    : product.title
 }
       </h3>
 

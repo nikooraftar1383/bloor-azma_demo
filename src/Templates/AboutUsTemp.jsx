@@ -1,4 +1,5 @@
 
+import { TfiCup } from "react-icons/tfi"
 import pride from "../Data/prid"
 let AboutUsTemp = ()=>{
     
@@ -40,9 +41,9 @@ let AboutUsTemp = ()=>{
 
      </div>
     
-    <div className=" w-full bg-[#12b7a7] py-20 mt-25">
+    <div className=" w-full bg-[#12b7a7] py-20 mt-25  relative -z-20">
          <div className="max-w-7xl mx-auto">
-      <h2 className="mt-10 text-[40px] leading-[1.15] font-light text-slate-900 max-w-[1300px] text-white">
+      <h2 className="mt-10 text-[40px] leading-[1.15] font-light max-w-[1300px] text-slate-50">
 
          We are proud to work with a number of{" "}
 
@@ -57,9 +58,11 @@ let AboutUsTemp = ()=>{
           </span>
 
       </h2>
+     
     <div className="grid grid-cols-3 mt-8 gap-10 w-[90%] mx-auto">
         {pride.map((elem,index)=>(
-             <div key={index} className="p-7 text-white h-[170px] border border-white rounded-xl text-end cursor-pointer font-fa bg-white/20 backdrop-blur-md transition-all duration-500">
+             <div key={index} className="p-7 text-white h-[200px] border border-white rounded-xl text-end cursor-pointer font-fa bg-white/20 backdrop-blur-md transition-all duration-500 ">
+              
 <h1>{elem}</h1>
 
 </div>
@@ -67,6 +70,18 @@ let AboutUsTemp = ()=>{
    
     </div>
   </div>
+ <div className="w-[72%] mx-auto text-center mt-20">
+     <h2 className="mt-10 text-[40px] leading-[1.15] font-light text-white ">
+
+          “PROSION Therapeutics’ approach represents an elegant way to{" "}
+
+          <span className="bg-linear-to-r from-[#0a0642] to-[#096b61] bg-clip-text text-transparent font-semibold">
+             develop entirely novel drugs with game-changing potential.” 
+          </span>
+
+
+      </h2>
+ </div>
     </div>
     </>
 }

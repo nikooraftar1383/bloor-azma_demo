@@ -4,6 +4,7 @@ import Layout from "../Layout/Layout"
 import Products from "../pages/Products"
 import ProductDetails from "../pages/ProductDetails"
 import AboutUs from "../pages/AboutUs"
+import ContactUs from "../pages/ContactUs"
 
 
 
@@ -16,6 +17,7 @@ let App= ()=>{
         <Route element={<Products/>} path="/products"/>
         <Route element={<ProductDetails/>} path="/products/:id"/>
         <Route element={<AboutUs/>} path="/AboutUs"/>
+        <Route element={<ContactUs/>} path="/ContactUs"/>
     </Routes>
     </Layout>
     </BrowserRouter>

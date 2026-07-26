@@ -3,6 +3,7 @@ import ProductHero from "./ProductHero";
 import SearchBar from "./SearchBar";
 import ProductGrid from "./ProductGrid";
 import Pagination from "./Pagination";
+import CategoryCard from "./CategoryCard";
 
 let ProductTemp = () => {
   let [search, setsearch] = useState("");
@@ -53,13 +54,8 @@ Pt-20
         <>
           {" "}
           <ProductHero search={search} setsearch={setsearch}/>
-         
-          <ProductGrid products={currentProducts} />
-          <Pagination
-            currentPage={currentPage}
-            totalPages={totalPages}
-            setCurrentPage={setCurrentPage}
-          />
+          <CategoryCard/>         
+          
         </>
       )}
 </div>

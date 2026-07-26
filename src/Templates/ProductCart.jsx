@@ -13,9 +13,11 @@ return<>
     rounded-[25px]
     cursor-pointer
     border
+    border-[#f2f3f5]
     justify-between
     shadow-lg
     relative
+    bg-white  
     ">
       <img
         src={product.image}

@@ -57,7 +57,7 @@ style={{ backgroundColor: elem.color }} ></div>
 </div>
 <input type="text" placeholder="Company and project name" className="outline-none  py-3.5 px-4 bg-[#f3f4f6] rounded-xl w-[93%] border border-[#e3e1e1] mt-4 " />
 <span className="my-5 text-[12px] text-center text-[#6b7280]">Select a collaboration type above to continue</span>
-<input type="text"placeholder="What are your expectations? " className="outline-none  py-3.5 px-4 bg-[#f3f4f6] rounded-xl w-[93%] border border-[#e3e1e1] mt-4 h-32.5 " />
+<input type="text"placeholder="What are your expectations? " className="outline-none  py-3.5 px-4 bg-[#f3f4f6] rounded-xl w-[93%] border border-[#e3e1e1] mt-4 h-32.5 placeholder:iyems-start" />
  <button className="px-7 rounded-full bg-[#14b8a6] mt-6 py-3.5  hover:scale-110 transition w-[30%] ms-[63%]">
           <div className="flex items-center gap-2">
              <FiSend color="white"  />

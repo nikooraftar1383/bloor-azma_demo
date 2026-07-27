@@ -337,3 +337,21 @@ background-size:20px 20px;
 opacity:.4;
 
 }
+
+.custom-scrollbar {
+    scrollbar-width: thin; /* فایرفاکس */
+    scrollbar-color: #d7e1ee transparent; /* فایرفاکس: رنگ thumb و track */
+  }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 3px; /* عرض اسکرول‌بار در کروم/سافاری/اج */
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 9999px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #adb6c4;
+  }

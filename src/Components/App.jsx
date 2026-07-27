@@ -16,7 +16,6 @@ let App= ()=>{
         <Route element={<Home/>} path="/"/>
         <Route element={<Products/>} path="/products"/>
         <Route element={<ProductDetails/>} path="/products/:id"/>
-        <Route element={<AboutUs/>} path="/AboutUs"/>
         <Route element={<ContactUs/>} path="/ContactUs"/>
     </Routes>
     </Layout>

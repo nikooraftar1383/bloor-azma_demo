@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "../pages/Home"
 import Layout from "../Layout/Layout"
-import Products from "../pages/Products"
 import ProductDetails from "../pages/ProductDetails"
 import AboutUs from "../pages/AboutUs"
 import ContactUs from "../pages/ContactUs"
+import CategoryCard from "../Templates/CategoryCard"
 
 
 
@@ -14,7 +14,7 @@ let App= ()=>{
     <Layout>
     <Routes>
         <Route element={<Home/>} path="/"/>
-        <Route element={<Products/>} path="/products"/>
+        <Route element={<CategoryCard/>} path="/products"/>
         <Route element={<ProductDetails/>} path="/products/:id"/>
         <Route element={<ContactUs/>} path="/ContactUs"/>
     </Routes>

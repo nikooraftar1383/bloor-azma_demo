@@ -24,7 +24,14 @@ let CategoryCard = () => {
   }
   return (
     <>
-      <div className="w-[40%] flex flex-col mx-auto gap-10">
+      <div
+className="min-h-screen
+bg-white
+py-30 
+[background-image:radial-gradient(#d4d4d8_1px,transparent_1px)]
+[background-size:22px_22px]"
+>
+  <div className="w-[40%] flex flex-col mx-auto gap-10">
         {Category.map((elem) => (
           <div
             className="flex flex-col rounded-2xl cursor-pointer border-2 border-[#f2f3f5] bg-white"
@@ -53,7 +60,7 @@ let CategoryCard = () => {
                 </div>
               </div>
               <button
-                className="py-1 px-3 h-[30px] rounded-full border-[#e4e5e8] border text-[11px] "
+                className="py-1 px-3 h-[30px] rounded-full border-[#e4e5e8] border text-[11px] cursor-pointer "
                 style={{
                   color: elem.color,
                   backgroundColor: hexToRgba(elem.color, 0.08),
@@ -65,7 +72,9 @@ let CategoryCard = () => {
           </div>
         ))}
       </div>
+</div>
       <CategoryModal
+        hexToRgba={hexToRgba}
         category={activeCategory}
         onClose={() => setActiveCategory(null)}
         onSelectProduct={(product) => {

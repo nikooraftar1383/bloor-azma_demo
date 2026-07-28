@@ -25,7 +25,19 @@ let ProductDetailTemp =()=>{
 console.log(product);
 
 return<>
- {product && <h1>{product.title}</h1>}
+ {product && 
+     <div className="p-20">
+      <h1 className="font-fa" dir="rtl">{product.title}</h1>
+
+      <div
+        dangerouslySetInnerHTML={{
+          __html: product.long_desc,
+        }}
+      />
+    
+ </div>
+ 
+ }
 
 </>
 }

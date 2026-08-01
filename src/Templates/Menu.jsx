@@ -26,7 +26,6 @@ let Menu = () => {
 
   return (
     <>
-      {/* این div فقط جای هدر ثابت رو نگه می‌داره - ارتفاعش نباید بسته به isScrolled عوض بشه */}
       <div className="h-[1px]" />
 
       <header
@@ -50,16 +49,18 @@ let Menu = () => {
           </div>
           <div className="  w-[55%] ">
             <ul className=" flex justify-between items-center ">
+               <li >
+                <NavLink to="/" className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]">Home</NavLink>
+              </li>
               <li >
                 <NavLink to="/products" className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]">Products</NavLink>
               </li>
-              <li >
-                <NavLink to="/" className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]">Home</NavLink>
-              </li>
+             
               <li >
                 <NavLink to="/ContactUs" className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]">ContactUs</NavLink>
                 
               </li>
+              
               <li>
                 <button
                   className={` cursor-pointer btn border border-[#e5e7eb] bg-[#FAFAFA]  text-black  font-bold  rounded-full hover:scale-110  ${isScrolled || isModalOpen ? "text-[12px] px-5 py-2.5" : "leading-11 text-[15px] px-6.5 "}`}
@@ -82,5 +83,6 @@ let Menu = () => {
     </>
   );
 };
+
 
 export default Menu;

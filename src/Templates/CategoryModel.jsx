@@ -93,7 +93,7 @@ function CategoryModal({ category, onClose, onSelectProduct, hexToRgba }) {
             </div>
           </div>
 
-          <div className="w-[55%] h-[0.5px] bg-[#d1d5db]  mx-auto mt-3 "> </div>
+          <div className="w-[58%] h-[1px] bg-[#d1d5db]  mx-auto mt-3 "> </div>
           {/* لیست محصولات دسته - قابل اسکرول */}
           <div className="overflow-y-auto p-5 custom-scrollbar">
             {loading
@@ -109,12 +109,17 @@ function CategoryModal({ category, onClose, onSelectProduct, hexToRgba }) {
                       to={`/products/${elem.title}`}
                       className="flex gap-3  "
                     >
-                      <div className="flex flex-col justify-center " dir="rtl">
+                      <div
+                        className="flex flex-col justify-center px-2 "
+                        dir="rtl"
+                      >
                         <h1 className="text-[14px] font-extrabold font-fa ">
                           {elem.title}
                         </h1>
                         <span className="text-[#6b7280] text-[12px] mt-5">
-                          {elem.short_desc}
+                          {elem.short_desc.length > 120
+                            ? `${elem.short_desc.slice(0, 120)}...`
+                            : elem.short_desc}
                         </span>
                         <div className="flex w-full justify-end mt-2">
                           <button
@@ -131,7 +136,7 @@ function CategoryModal({ category, onClose, onSelectProduct, hexToRgba }) {
                       <img
                         src={elem.image}
                         alt={elem.title}
-                        className="w-30 h-30 rounded-xl"
+                        className="w-25 h-25 rounded-xl"
                       />
                     </Link>
                   </div>

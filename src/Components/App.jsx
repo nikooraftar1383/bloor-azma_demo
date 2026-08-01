@@ -17,6 +17,7 @@ let App= ()=>{
         <Route element={<CategoryCard/>} path="/products"/>
         <Route element={<ProductDetails/>} path="/products/:id"/>
         <Route element={<ContactUs/>} path="/ContactUs"/>
+        <Route element={<AboutUs/>} path="/AboutUS"/>
     </Routes>
     </Layout>
     </BrowserRouter>

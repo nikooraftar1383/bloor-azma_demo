@@ -206,7 +206,22 @@ Pt-20
            We work with the world's most reliable automotive brands.
           </span>
         </div>
-        div
+        <div className="flex justify-between rounded-3xl px-11.5 py-9.5 bg-[#11af9f] w-[61%] mx-auto mt-5 ">
+              <div className="flex flex-col">
+                <h3 className="text-white mb-1.5  text-[21px] font-extrabold">Ready to Find the Right Parts?</h3>
+                <p className="text-[13.5px] text-[#c8e3e3] ">Choose your vehicle now and discover compatible parts.</p>
+              </div>
+               <div className="flex justify-center">
+          <button className="px-7 rounded-full text-[#14b8a6] mt-6 py-3.5 bg-white hover:scale-110 transition ">
+            <div className="flex items-center gap-2 justify-center  ">
+              <span className="text-[14px]  font-semibold leading-5">
+                Browse Products 
+              </span>
+              <FaArrowRightLong color="#14b8a6" />
+            </div>
+          </button>
+        </div>
+        </div>
       </div>
     </>
   );

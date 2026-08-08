@@ -44,21 +44,20 @@ let ProductTemp = () => {
   return (
     <>
       <div
-className="min-h-screen
+        className="min-h-screen
 bg-white
 Pt-20
 [background-image:radial-gradient(#d4d4d8_1px,transparent_1px)]
 [background-size:22px_22px]"
->
-  {products && (
-        <>
-          {" "}
-          <ProductHero search={search} setsearch={setsearch}/>
-          <CategoryCard/>         
-          
-        </>
-      )}
-</div>
+      >
+        {products && (
+          <>
+            {" "}
+            <ProductHero search={search} setsearch={setsearch} />
+            <CategoryCard />
+          </>
+        )}
+      </div>
     </>
   );
 };

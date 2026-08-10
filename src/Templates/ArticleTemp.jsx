@@ -70,7 +70,7 @@ Pt-20
             const categoryColor = palette[index % palette.length];
 
             return (
-              <Link
+              <Link to={`/Article/${elem.title}`}
                 key={elem.id}
                 className="p-4 rounded-[22px] border border-[#ecedf3] mt-5 bg-white shadow-lg flex justify-between items-center gap-4.5 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(0,0,0,.08)]"
               >

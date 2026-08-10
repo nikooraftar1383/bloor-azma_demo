@@ -6,6 +6,7 @@ import AboutUs from "../pages/AboutUs"
 import ContactUs from "../pages/ContactUs"
 import CategoryCard from "../Templates/CategoryCard"
 import Article from "../pages/Article"
+import ArticleDetail from "../pages/ArticleDetail"
 
 
 
@@ -20,6 +21,7 @@ let App= ()=>{
         <Route element={<ContactUs/>} path="/ContactUs"/>
         <Route element={<AboutUs/>} path="/AboutUS"/>
         <Route element={<Article/>} path="/Article"/>
+        <Route element={<ArticleDetail/>} path="/Article/:id"/>
     </Routes>
     </Layout>
     </BrowserRouter>

@@ -19,7 +19,7 @@ let Menu = () => {
         }
       });
     };
-     handleScroll();
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -49,32 +49,47 @@ let Menu = () => {
           </div>
           <div className="  w-[55%] ">
             <ul className=" flex justify-between items-center ">
-               <li >
-                <NavLink to="/" className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]">Home</NavLink>
-              </li>
-              <li >
-                <NavLink to="/products" className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]">Products</NavLink>
-              </li>
-             
-              <li >
-                <NavLink to="/ContactUs" className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]">ContactUs</NavLink>
-                
-              </li>
-              
               <li>
-                <button
-                  className={` cursor-pointer btn border border-[#e5e7eb] bg-[#FAFAFA]  text-black  font-bold  rounded-full hover:scale-110  ${isScrolled || isModalOpen ? "text-[12px] px-5 py-2.5" : "leading-11 text-[15px] px-6.5 "}`}
+                <NavLink
+                  to="/"
+                  className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]"
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/products"
+                  className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]"
+                >
+                  Products
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/ContactUs"
+                  className="py-3 px-2 font-semibold text-[rgb(164,167,172)] hover:text-black cursor-pointer text-[14px]"
+                >
+                  ContactUs
+                </NavLink>
+              </li>
+
+              <li>
+                <Link
+                  to="/login"
+                  className={` cursor-pointer inline-flex items-center justify-center border border-[#e5e7eb]  text-black bg-[#FAFAFA] rounded-full transition-transform font-bold duration-300 hover:scale-105 ${ isScrolled || isModalOpen? "text-[12px] px-5 py-2.5": "leading-11 text-[15px] px-6"}`}
                 >
                   Sign in
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  className={`cursor-pointer btn bg-[#14b8a6] text-white  font-bold  rounded-full hover:scale-110 transition ${isScrolled || isModalOpen? "text-[12px] px-5 py-2.5" : "text-[15px] leading-11 px-6.5"}`}
+                <Link
+                  to="/login"
+                  className={` cursor-pointer inline-flex items-center justify-center border border-[#e5e7eb] bg-[#14b8a6] text-white rounded-full transition-transform font-bold duration-300 hover:scale-105 ${ isScrolled || isModalOpen? "text-[12px] px-5 py-2.5": "leading-11 text-[15px] px-6"}`}
                 >
-                  <NavLink />
-                  Sign up
-                </button>
+                  Sign in
+                </Link>
               </li>
             </ul>
           </div>
@@ -83,6 +98,5 @@ let Menu = () => {
     </>
   );
 };
-
 
 export default Menu;

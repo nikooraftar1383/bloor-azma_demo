@@ -1,4 +1,4 @@
-import Boxtemplate from "../Templates/boxtemplate"
+import Boxtemplate from "../Templates/Boxtemplate"
 import Build from "../Templates/Build"
 import Carousel from "../Templates/Carousel"
 import EventSection from "../Templates/EventSection"

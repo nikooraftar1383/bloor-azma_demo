@@ -217,109 +217,11 @@
   animation-duration: 3.2s;
 }
 
-/*کارت مشکی آخر صفحه*/
-.hero-card{
-
-width:61%;
-
-
-background:#111827;
-
-border-radius:34px;
-
-display:grid;
-height: 375px;
-
-grid-template-columns: 60% 40%;
-overflow:hidden;
-
-position:relative;
-
-}
-
-/*سمت چپ قسمت انتهایی*/
-.hero-left{
-
-padding:48px;
-margin-bottom: 12px;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-}
-
-.hero-left h2{
-
-font-size:36px;
-line-height: 40px;
-font-weight:800;
-margin-bottom: 12px;
-margin-top: 16px;
-color:white;
 
 
 
 
-}
 
-.hero-small{
-font-weight: 600;
-font-size:11px;
-color:#6b7280;
-
-}
-
-.hero-left p{
-color: white;
-font-size: 18px;
-
-}
-
-.buttons{
-
-display:flex;
-
-gap:20px;
-
-}
-
-/* استایل دکمه ها*/
-
-.primary{
-
-background:white;
-
-color:black;
-  font-size: 14px;
-padding-inline:24px;
-
-border-radius:999px;
-
-}
-
-.secondary{
-
-border:1px solid #4b5563;
-
-
-
-padding-inline: 24px;
-padding-block: 9px;
-border-radius:999px;
-
-}
-/*سمت راست*/
-.hero-right{
-
-position:relative;
-
-overflow:hidden;
-
-
-}
 .grid-bg{
 
 position:absolute;

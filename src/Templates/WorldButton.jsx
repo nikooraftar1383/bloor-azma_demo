@@ -89,7 +89,7 @@ let WorldButton = () => {
           />
         ))}
       </div>
-      <div className="flex gap-5 items-baseline">
+      <div className="flex gap-5 md:items-baseline flex-col">
         <button className="px-7 rounded-full bg-[#14b8a6] mt-6 py-3.5  hover:scale-110 transition">
           <div className="flex items-center gap-2">
             <span className="text-[14px] text-white font-semibold leading-5">

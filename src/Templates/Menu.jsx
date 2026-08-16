@@ -35,7 +35,7 @@ let Menu = () => {
           ${isScrolled || isModalOpen ? "bg-white/20 backdrop-blur-md shadow-md py-3" : "bg-transparent py-6"}
         `}
       >
-        <div className="w-[61%] mx-auto flex justify-between items-center">
+        <div className="lg:w-[61%] lg:mx-auto flex justify-between items-center sm:w-full sm:px-8 ">
           <div className="flex justify-center gap-2  items-center">
             <img
               src="/public/images/karospace.svg"

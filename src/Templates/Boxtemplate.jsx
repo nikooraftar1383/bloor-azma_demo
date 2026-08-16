@@ -3,26 +3,26 @@ import "../css/BorderStyle.css";
 let Boxtemplate = () => {
   return (
     <>
-      <div className="w-[61%] mx-auto flex flex-col  h-132.5">
+      <div className="lg:w-[61%] lg:mx-auto flex flex-col  h-132.5 md:px-8 items-center lg:items-start">
         <span className="text-[11px] text-[#a0a7b2] font-semibold space-y-8">
           Builder Network
         </span>
-        <p className="text-[32px] font-bold my-3.5">
+        <p className="text-[32px] font-bold my-3.5 text-center sm:text-start">
           Find the people your work needs
         </p>
-        <div className="flex relative ">
-          <div className="   w-[35%]">
-            <span className="text-[16px] text-[#6b7280] pe-20">
+        <div className="flex relative md:flex-row flex-col items-center md:items-start ">
+          <div className="   w-[45%]">
+            <span className="text-[16px] text-[#6b7280] md:pe-20  ">
               Connect with people who make, build, design, edit, write, launch,
               and care about the same kind of work you do.
             </span>
           </div>
-          <div className="absolute left-35 top-0  px-0">
+          <div className="absolute lg:left-25 md:left-0 md:top-0 sm:top-12 xl:left-30 top-21 px-0">
             <svg
               xmlns:xlink="http://www.w3.org/1999/xlink"
               xmlns="http://www.w3.org/2000/svg"
               class="text-muted"
-              width="768"
+              width="700"
               height="384"
               viewBox="0 0 200 100"
             >

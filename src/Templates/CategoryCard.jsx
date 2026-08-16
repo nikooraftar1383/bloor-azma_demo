@@ -31,7 +31,7 @@ py-30
 [background-image:radial-gradient(#d4d4d8_1px,transparent_1px)]
 [background-size:22px_22px]"
 >
-  <div className="w-[40%] flex flex-col mx-auto gap-10">
+  <div className="lg:w-[43%] flex flex-col mx-auto gap-10 md:w-[50%] sm:w-[60%] w-[90%]">
         {Category.map((elem) => (
           <div
             className="flex flex-col rounded-2xl cursor-pointer border-2 border-[#f2f3f5] bg-white"

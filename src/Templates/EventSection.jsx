@@ -51,12 +51,15 @@ let EventSection = () => {
 }, [activeImage]);
   return (
     <>
-      <div className="w-[61%] mx-auto mt-31.75  border-t border-[0.25px]  border-slate-200/50 "></div>
-      <div className="w-[61%] mx-auto mt-1">
+    {/*first border*/}
+      <div className="lg:w-[61%] mx-auto md:w-[90%] md:mt-31.75  border-t border-[0.25px]  border-slate-200/50 w-[90%] mt-35.25"></div>
+      {/*متن پایه بالای متن گردشی */}
+      <div className="lg:w-[61%] lg:mx-auto md:px-8 mt-1 px-8">
         <span className="text-[12px] text-[#9ca3af] scale-[0.999] ">
           EVENTS WE'VE HOSTED
         </span>
       </div>
+      {/* متن گردشی و هاور عکس ها*/}
       <div className="flex overflow-hidden ">
         <div className="w-full flex  animate-marquee">
           {[...eventtext, ...eventtext].map((elem, index) => (
@@ -65,7 +68,7 @@ let EventSection = () => {
               key={index}
             >
               <p
-                className="cursor-pointer transition-colors text-[92.16px] duration-200 hover:text-black text-[#9ca3af] font-bold "
+                className="cursor-pointer transition-colors lg:text-[92.16px] md:text-[48px] duration-200 hover:text-black text-[#9ca3af] font-bold text-[48px] "
                 onMouseEnter={() => {
                   setActiveImage(elem.image);
                 }}
@@ -80,11 +83,12 @@ let EventSection = () => {
                 {elem.title}
               </p>
               <div className="h-full flex items-center  pb-10">
-                <p className="text-[#dad7d7] text-[93px]   ">.</p>
+                <p className="text-[#dad7d7] md:text-[93px] text-[75px]   ">.</p>
               </div>
             </div>
           ))}
         </div>
+        {/*هاور عکس ها*/}
      <AnimatePresence>
   {activeImage && (
     <motion.img
@@ -117,8 +121,8 @@ let EventSection = () => {
   )}
 </AnimatePresence>
       </div>
-    
-      <div className="w-[61%] mx-auto mt-0  border-t border-[0.25px]  border-slate-200/50 "></div>
+    {/*last border*/}
+      <div className="lg:w-[61%] mx-auto md:w-[90%] mt-0  border-t border-[0.25px]  border-slate-200/50 w-[90%]"></div>
     </>
   );
 };

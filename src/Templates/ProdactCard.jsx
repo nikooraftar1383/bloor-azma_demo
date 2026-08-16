@@ -31,7 +31,11 @@ let ProductCard = ({ index, activeIndex, elem }) => {
     pe-25
     p-10
     pb-2.5
-    w-[25%]
+    lg:w-[35%]
+    xl:w-[25%]
+    md:w-[50%]
+    sm:w-[60%]
+    w-full
     flex
     flex-col
     rounded-[25px]

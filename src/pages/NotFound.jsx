@@ -47,17 +47,18 @@ let NotFound = () => {
         className="min-h-screen p-32
 bg-white
 Pt-20
+w-full
 [background-image:radial-gradient(#d4d4d8_1px,transparent_1px)]
 [background-size:22px_22px] "
       >
-        <div className="w-[71%] flex items-center justify-between  mx-auto">
+        <div className="lg:w-[71%] flex items-center lg:justify-between  mx-auto flex-col lg:flex-row w-full  ">
           <div className="flex justify-center items-center w-[50%]">
-            <img src="/public/images/NotFound/ChatGPT Image Aug 11, 2026, 08_41_49 AM.png" alt="" />
+            <img  src="/public/images/NotFound/ChatGPT Image Aug 11, 2026, 08_41_49 AM.png"  />
           </div>
-          <div className="w-[50%] flex flex-col items-start">
+          <div className="lg:w-[50%] w-full  flex flex-col lg:items-start items-center">
             <h1 className="text-[130px] text-[#8364f5] font-extrabold my-4">404</h1>
             <h3 className="text-[34px] font-extrabold my-4">Oops!Page Not Found</h3>
-            <span className="text-[15px] text-[#6b7280] mb-5">
+            <span className="text-[15px] text-[#6b7280] mb-5 text-center lg:text-start">
               the page youre looking for is not exist or has been moved.Lets get
               you back.
             </span>
@@ -67,16 +68,16 @@ Pt-20
             </Link>
           </div>
         </div>
-        <div className="w-[71%] mx-auto flex flex-col p-11 rounded-3xl bg-[#f6f6f8] mt-14">
+        <div className="lg:w-[71%] sm:w-[85%] w-full  mx-auto flex flex-col p-11 rounded-3xl bg-[#f6f6f8] mt-14">
           <h1 className="text-[20px] font-extrabold mb-6.5">
             You might be Looking for
           </h1>
-          <div className="flex w-full gap-3 ">
+          <div className="flex w-full gap-3 lg:flex-nowrap flex-wrap">
             {referral.map((itm,index) => {
               return (
                 
                   <Link
-                    className=" bg-white border w-[25%] flex flex-col items-center gap-3 p-6 rounded-3xl border-[#ecedf3] shadow-md"
+                    className=" bg-white border lg:w-[25%] md:w-[45%] w-[80%] flex flex-col items-center gap-3 p-6 rounded-3xl border-[#ecedf3] shadow-md"
                     to={itm.link}
                     key={index}
                   >

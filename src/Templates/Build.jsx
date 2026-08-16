@@ -47,7 +47,7 @@ blur-[250px]
             Build in public
           </h1>
 
-          <p className="mt-6  text-[16px] text-gray-500 w-[50%] mx-auto">
+          <p className="mt-6  text-[16px] text-gray-500 md:w-[50%] mx-auto w-[75%]">
             Turn your progress into visibility. Share updates, get feedback, and
             let the right people discover what you're making.
           </p>

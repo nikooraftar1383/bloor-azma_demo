@@ -83,7 +83,7 @@ const LoginTemp = () => {
               </div>
             </div>
 
-            {/* Remember + Forgot */}
+
             <div className="flex items-center justify-between">
               <label className="flex items-center gap-2 cursor-pointer">
                 <input type="checkbox" className="w-4 h-4 accent-[#6d5bf0]" />
@@ -163,3 +163,4 @@ const LoginTemp = () => {
 };
 
 export default LoginTemp;
+

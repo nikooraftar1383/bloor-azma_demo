@@ -3,7 +3,7 @@ import WorldButton from "./WorldButton"
 let WorldSection =()=>{
 return<>
 {/*متن پایه*/}
- <div className=" lg:w-[61%] lg:mx-auto mt-1 flex md:justify-start sm:justify-center md:px-8 ">
+ <div className=" lg:w-[61%] lg:mx-auto mt-1 flex md:justify-start sm:justify-center md:px-8 px-8 ">
         <span className="md:text-[15px] text-[#9ca3af] scale-[0.999] font-medium text-[11px] ">
           From Work To Opportunity 
         </span>

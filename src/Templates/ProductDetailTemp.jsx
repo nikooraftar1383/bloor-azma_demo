@@ -274,29 +274,35 @@ Pt-20
             </div>
           </div>
         </div>
-        <div className="flex justify-between rounded-3xl px-11.5 py-9.5 bg-[#11af9f] w-[71%] mx-auto mt-5 ">
-          <div className="rounded-full w-14 h-14 bg-[#7fcfc7] flex justify-center items-center ">
-            <AiOutlineProduct color="white" size={26} />
-          </div>
-          <div className="flex flex-col">
-            <h3 className="text-white mb-1.5  text-[21px] font-extrabold">
-              Ready to Find the Right Parts?
-            </h3>
-            <p className="text-[13.5px] text-[#c8e3e3] ">
-              Choose your vehicle now and discover compatible parts.
-            </p>
-          </div>
-          <div className="flex justify-center">
-            <button className="px-7 rounded-full text-[#14b8a6] mt-6 py-3.5 bg-white hover:scale-110 transition ">
-              <div className="flex items-center gap-2 justify-center  ">
-                <span className="text-[14px]  font-semibold leading-5">
-                  Browse Products
-                </span>
-                <FaArrowRightLong color="#14b8a6" />
-              </div>
-            </button>
-          </div>
-        </div>
+        {/*باتن انتهایی صفحه ریسپانسیو شده */}
+               <div
+  className="flex flex-col sm:flex-row items-center sm:justify-between gap-6 sm:gap-4 rounded-3xl px-6 py-6 sm:px-8 lg:px-11.5 lg:py-9.5 bg-[#11af9f] xl:w-[71%] lg:w-[80%] md:w-[90%] w-full mx-auto mt-5"
+  dir="ltr"
+>
+  <div className="rounded-full w-14 h-14 shrink-0 bg-[#7fcfc7] flex justify-center items-center">
+    <AiOutlineProduct color="white" size={26} />
+  </div>
+
+  <div className="flex flex-col text-center sm:text-left">
+    <h3 className="text-white mb-1.5 text-lg sm:text-[21px] font-extrabold">
+      Ready to Find the Right Parts?
+    </h3>
+    <p className="text-[13px] sm:text-[13.5px] text-[#c8e3e3]">
+      Choose your vehicle now and discover compatible parts.
+    </p>
+  </div>
+
+  <div className="flex justify-center w-full sm:w-auto">
+    <button className="px-7 rounded-full text-[#14b8a6] py-3.5 bg-white hover:scale-110 transition w-full sm:w-auto">
+      <div className="flex items-center gap-2 justify-center">
+        <span className="text-[14px] font-semibold leading-5 whitespace-nowrap">
+          Browse Products
+        </span>
+        <FaArrowRightLong color="#14b8a6" />
+      </div>
+    </button>
+  </div>
+</div>
       </div>
     </>
   );

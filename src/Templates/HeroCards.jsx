@@ -1,4 +1,3 @@
-import "../css/BorderStyle.css";
 
 function HeroCards() {
   return (
@@ -15,8 +14,8 @@ function HeroCards() {
             direction.
           </span>
 
-          <div className="flex gap-[20px]">
-            <button className="bg-white text-black text-[14px] px-6 rounded-full hover:scale-105 cursor-pointer">Contact us</button>
+          <div className="flex gap-[20px] sm:flex-row flex-col">
+            <button className="bg-white text-black text-[14px] px-6 py-2 rounded-full hover:scale-105 cursor-pointer">Contact us</button>
 
             <button className="border border-[#4b5563] text-[#b8babf] hover:scale-105 cursor-pointer px-6 py-2 rounded-full ">
               Explore Products

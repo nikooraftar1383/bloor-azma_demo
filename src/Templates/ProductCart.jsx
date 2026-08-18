@@ -1,12 +1,11 @@
-
 import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-let ProductCart =({product})=>{
-  
-return<>
- <Link to={`/products/${product.title}`}>
- <div className="
+let ProductCart = ({ product }) => {
+  return (
+    <>
+      <Link to={`/products/${product.title}`}>
+    <div className="
     p-8
     flex
     flex-col
@@ -48,7 +47,8 @@ return<>
      </div>
       </Link>
     </div> 
- </Link>
-</>
-}
-export default ProductCart
+      </Link>
+    </>
+  );
+};
+export default ProductCart;

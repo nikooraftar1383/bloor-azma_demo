@@ -46,20 +46,20 @@ export default function AccessoriesSwiper() {
         className="mySwiper"
       >
         <SwiperSlide className="shadow-md">
-          <div className="flex flex-col gap-1.5">
-            <div className="w-50 h-42.5 bg-[#f7f6fb] rounded-xl "> </div>
+          <div className="flex flex-col gap-1.5 items-center">
+            <div className="lg:w-50 lg:h-42.5 md:w-30 md:h-30 w-25 h-25 bg-[#f7f6fb] rounded-xl "> </div>
             <span className="text-[13px] font-bold mt-3">Deuterium Lamp D2-200</span>
           </div>
         </SwiperSlide>
         <SwiperSlide className="shadow-md">
-           <div className="flex flex-col gap-1.5">
-            <div className="w-50 h-42.5 bg-[#f7f6fb] rounded-xl "> </div>
+           <div className="flex flex-col gap-1.5 items-center">
+            <div className="lg:w-50 lg:h-42.5 md:w-30 md:h-30 w-25 h-25 bg-[#f7f6fb] rounded-xl "> </div>
             <span className="text-[13px] font-bold mt-3">Quartz Cuvette 10 mm</span>
           </div>
         </SwiperSlide>
         <SwiperSlide  className="shadow-md">
-           <div className="flex flex-col gap-1.5">
-            <div className="w-50 h-42.5 bg-[#f7f6fb] rounded-xl "> </div>
+           <div className="flex flex-col gap-1.5 items-center">
+            <div className="lg:w-50 lg:h-42.5 md:w-30 md:h-30 w-25 h-25 bg-[#f7f6fb] rounded-xl "> </div>
             <span className="text-[13px] font-bold mt-3">Deuterium Lamp D2-200</span>
           </div>
         </SwiperSlide>

@@ -16,8 +16,6 @@ let Home =()=>{
     <Carousel/>
     <Boxtemplate/>
     <HeroCards/>
-    
-
     </>
 }
 export default Home

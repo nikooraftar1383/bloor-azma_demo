@@ -222,9 +222,10 @@ export default function Spectrophotometer3D() {
     <div className="w-full flex flex-col items-center gap-4">
       <div
         ref={mountRef}
-        className="w-full max-w-[600px] h-[400px] rounded-2xl bg-gradient-to-br from-[#f5f5ff] to-[#eefcf9] border border-[#ecedf3] relative overflow-hidden"
+        className="w-full max-w-[600px] h-[400px] rounded-2xl  relative overflow-hidden"
       />
 
+     {/*
       <div className="flex items-center gap-3">
         <button
           onClick={() => setAutoRotate((v) => !v)}
@@ -233,6 +234,7 @@ export default function Spectrophotometer3D() {
           {autoRotate ? "توقف چرخش خودکار" : "شروع چرخش خودکار"}
         </button>
       </div>
+     */}
 
       {selectedPart && (
         <div className="px-4 py-2 rounded-xl bg-[#11af9f]/10 text-[#11af9f] text-[13px] font-semibold">
@@ -240,10 +242,12 @@ export default function Spectrophotometer3D() {
         </div>
       )}
 
-      <p className="text-[12px] text-[#84879a] text-center max-w-[420px]">
+    {/*
+       <p className="text-[12px] text-[#84879a] text-center max-w-[420px]">
         با موس بکشید تا بچرخانید، اسکرول کنید تا زوم کنید، و روی هر قسمت از
         دستگاه کلیک کنید تا نامش را ببینید.
       </p>
+     */}
     </div>
   );
 }

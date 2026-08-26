@@ -1,3 +1,4 @@
+import Spectrophotometer3D from "./Spectrophotometer3D"
 import WorldButton from "./WorldButton"
 
 let WorldSection =()=>{
@@ -9,7 +10,7 @@ return<>
         </span>
       </div>
   {/*متن بالای دکمه ها*/}    
-<div className="lg:px-[20.5%] pb-10 mx-auto mt-2 flex justify-between bg-linear-to-b from-transparent to-[#fbfbfb]">
+<div className="lg:px-[20.5%] pb-10 mx-auto mt-2 flex justify-between bg-linear-to-b from-transparent to-[#fbfbfb] flex-col md:flex-row items-center">
 <div className="xl:w-[60%] flex flex-col md:px-8 items-center md:items-start lg:px-0">
 <span className="md:text-[36px] font-black mb-4 text-[24px]">How opportunities happen</span>
 <p className="text-[16px] text-[#999ea7] md:w-[75%] w-[85%] text-center md:text-start ">Share your work, build visibility, connect with the right people, and create opportunities through every step of the journey.</p>
@@ -18,6 +19,10 @@ return<>
 </div>
 </div>
 {/*جایگاه عکس 3 بعدی دستگاه */}
+<div className="md:w-[40%] justify-center w-full  ">
+<Spectrophotometer3D/>
+
+</div>
 </div>
 
 </>

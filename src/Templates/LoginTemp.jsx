@@ -135,7 +135,7 @@ const LoginTemp = () => {
 
       <div className="flex justify-center items-center w-full">
         <img
-          src="/public/images/NotFound/ChatGPT Image Aug 11, 2026, 08_41_49 AM.png"
+          src="/images/NotFound/ChatGPT Image Aug 11, 2026, 08_41_49 AM.png"
           alt=""
           className="max-w-full h-auto"
         />

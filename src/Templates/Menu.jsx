@@ -57,7 +57,7 @@ let Menu = () => {
           {/* لوگو */}
           <div className="flex justify-center gap-2 items-center">
             <img
-              src="/public/images/karospace.svg"
+              src="/images/karospace.svg"
               alt=""
               className={`${isScrolled || isModalOpen ? "w-30.5 h-8" : "w-42.25 h-11"}`}
             />

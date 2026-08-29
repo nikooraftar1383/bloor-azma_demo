@@ -12,31 +12,31 @@ let EventSection = () => {
     },
     {
       title: "Workshops",
-      image: "/public/images/eventsection/1728813523277specteroil.webp",
+      image: "/images/eventsection/1728813523277specteroil.webp",
     },
     {
       title: "Demo Days",
-      image: "/public/images/eventsection/1724134657631B-SulfideAE201.webp",
+      image: "/images/eventsection/1724134657631B-SulfideAE201.webp",
     },
     {
       title: "Founder Sessions",
-      image: "/public/images/eventsection/1728813523277specteroil.webp",
+      image: "/images/eventsection/1728813523277specteroil.webp",
     },
     {
       title: "Community Nights",
-      image: "/public/images/eventsection/1728813523277specteroil.webp",
+      image: "/images/eventsection/1728813523277specteroil.webp",
     },
     {
       title: "Creative Sessions",
-      image: "/public/images/eventsection/1728813523277specteroil.webp",
+      image: "/images/eventsection/1728813523277specteroil.webp",
     },
     {
       title: "Meetups",
-      image: "/public/images/eventsection/1728813523277specteroil.webp",
+      image: "/images/eventsection/1728813523277specteroil.webp",
     },
     {
       title: "Workshops",
-      image: "/public/images/eventsection/1728813523277specteroil.webp",
+      image: "/images/eventsection/1728813523277specteroil.webp",
     },
   ];
 

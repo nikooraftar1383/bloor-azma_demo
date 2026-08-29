@@ -58,7 +58,7 @@ let ArticleDetailTemp = () => {
         {/*تصویر هیرو */}
         <div className="xl:w-[71%] lg:w-[80%] md:w-[90%] w-full flex mx-auto justify-center items-center rounded-[26px] ">
           <img
-            src="/public/images/category/spectorofotometr.jfif"
+            src="/images/category/spectorofotometr.jfif"
             alt={article.title}
             className="w-full h-100 rounded-[26px]"
           />

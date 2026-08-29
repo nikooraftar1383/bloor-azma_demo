@@ -26,7 +26,7 @@ let NotFound = () => {
     },
     {
       title: "AboutUs",
-      link: "/AboutUs",
+      link: "/AboutUS",
       des: "learn more about bloorazma",
       color: "text-purple-500",
       bg: "bg-purple-100",

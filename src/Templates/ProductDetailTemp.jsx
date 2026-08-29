@@ -45,17 +45,17 @@ let ProductDetailTemp = () => {
   let pdfs = [
     {
       title: "Brochure (PDF)",
-      file: "/public/pdf/waiting.pdf",
+      file: "/pdf/waiting.pdf",
       bg: "bg-teal-100",
     },
     {
       title: "Datasheet (PDF)",
-      file: "/public/pdf/waiting.pdf",
+      file: "/pdf/waiting.pdf",
       bg: "bg-blue-100",
     },
     {
       title: "User Manual (PDF)",
-      file: "/public/pdf/waiting.pdf",
+      file: "/pdf/waiting.pdf",
       bg: "bg-purple-100",
     },
   ];
@@ -90,7 +90,7 @@ pt-20
       >
         <div className="w-full lg:w-[85%] xl:w-[71%] mx-auto flex flex-col md:flex-row justify-between items-center gap-8 md:gap-6">
           <img
-            src="/public/images/eventsection/1724134657631B-SulfideAE201.webp"
+            src="/images/eventsection/1724134657631B-SulfideAE201.webp"
             alt=""
             className="w-[70%] sm:w-[55%] md:w-[50%]"
           />

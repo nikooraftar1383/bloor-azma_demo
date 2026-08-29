@@ -3,7 +3,7 @@ let Footer = () => {
   return (
     <>
       <div className="w-17 h-17 flex justify-center items-center rounded-full  bg-[#eff1f2] cursor-pointer border border-[#d9dcde] mx-auto mt-5 ">
-        <img src="/public/images/footer/Karo.svg" alt="" className="w-8" />
+        <img src="images/footer/Karo.svg" alt="" className="w-8" />
       </div>
       <div className="md:w-[60%] sm:w-[55%]  mx-auto flex  mt-8 px-8  ">
         <ul className="flex gap-4 justify-center text-[14px] text-[#8f9090] w-full flex-col items-start  md:items-center md:flex-row mx-auto  ">

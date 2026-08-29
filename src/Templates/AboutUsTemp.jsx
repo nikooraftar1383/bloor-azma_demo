@@ -84,7 +84,7 @@ pt-20
             </p>
           </div>
           <img
-            src="/public/images/about us/ChatGPT Image Aug 1, 2026, 04_02_49 PM.png"
+            src="/images/about us/ChatGPT Image Aug 1, 2026, 04_02_49 PM.png"
             alt=""
             className="w-[60%] sm:w-[50%] md:w-[48%] md:mb-0"
           />
@@ -187,7 +187,7 @@ pt-20
         </div>
         <div className="lg:w-[61%] md:w-[85%] w-[90%] mt-10 border border-[#e4e5e8] bg-[#fbfbfc] mx-auto flex flex-col md:flex-row p-6 sm:p-8 lg:p-11 rounded-[26px] justify-between gap-6 md:gap-8">
           <img
-            src="/public/images/about us/ChatGPT Image Aug 1, 2026, 05_04_34 PM.png"
+            src="/images/about us/ChatGPT Image Aug 1, 2026, 05_04_34 PM.png"
             alt=""
             className="w-full md:w-[45%] order-2 md:order-1"
           />

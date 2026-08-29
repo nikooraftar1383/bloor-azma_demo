@@ -2,22 +2,22 @@ import { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 let data = [
   {
-    icon: "/public/images/button_icons/svgexport-4 (1).svg",
+    icon: "/images/button_icons/svgexport-4 (1).svg",
     title: "Show your work",
     description: "Connect with collaborators, creators, founders, and ",
   },
   {
-    icon: "/public/images/button_icons/svgexport-5.svg",
+    icon: "/images/button_icons/svgexport-5.svg",
     title: "find your people",
     description: "Turn visibillity into feedback , collabration ",
   },
   {
-    icon: "/public/images/button_icons/svgexport-6.svg",
+    icon: "/images/button_icons/svgexport-6.svg",
     title: "Create opportunities",
     description: "document your jorney",
   },
   {
-    icon: "/public/images/button_icons/svgexport-7.svg",
+    icon: "/images/button_icons/svgexport-7.svg",
     title: "share your progress",
     description: "share what you make and let other",
   },
